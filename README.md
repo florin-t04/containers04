@@ -71,7 +71,7 @@ Am creat fișierul index.html cu conținutul HTML ce afișează mesajul „Hello
 *Ce vedeam acum pe ecran?*
 
 După reîmprospătare, pagina web afișa mesajul „Hello, World!” stilizat ca titlu (H1), confirmând că modificarea fișierului index.html a avut succes.
-![Alt text](screen/local.jpg)
+![Alt text](screen/local.JPG)
 
  Am navigat în directorul unde Apache stochează fișierele de configurare pentru site-urile active:
 ```bash
