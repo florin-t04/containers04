@@ -144,6 +144,16 @@ containers03
 my-containerdocker rm containers04
 ```
 
+## Concluzii:
+    - M-am familiarizat cu comenzile de bază din sistemele Debian/Ubuntu.
+    - Am utilizat Docker pentru a crea, administra și elimina containere.
+    - Am Instalat și configurat un server web Apache în interiorul unui container.
+    - Am modificat conținutul implicit al paginii web și verific rezultatele în browser.
+    - Am inspectat configurația implicită a Apache și gestionez containerele cu comenzi specifice.
+
+
+
+
 
 
 
