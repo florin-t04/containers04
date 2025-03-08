@@ -132,17 +132,7 @@ containers03
 1bd75cc03d88   postgres:latest   "docker-entrypoint.s…"   5 months ago     Exited (0) 2 months ago
 my-containerdocker rm containers04
 ```
-_______________________________________________________________________________________________
 
 
-
-
-PS C:\Users\user\Desktop\cv-lab04\containers04> docker run -ti -p 8000:80 --name containers04 ubuntu bash
-Unable to find image 'ubuntu:latest' locally
-latest: Pulling from library/ubuntu
-5a7813e071bf: Download complete
-Digest: sha256:72297848456d5d37d1262630108ab308d3e9ec7ed1c3286a32fe09856619a782
-Status: Downloaded newer image for ubuntu:latest
-root@e2721d9906e8:/# 
 
 
