@@ -5,11 +5,17 @@
 ## Sarcina: Pornind de la imaginea oficială a sistemului de operare Ubuntu, să se creeze un container care să conțină un server web Apache. Să se creeze o pagină web care să conțină textul "Hello, World!" și să se afișeze într-un browser.
 
 ## Descrierea executării lucrării cu răspunsuri la întrebări:
+
    **1. Pregătire**: 
+
 Am descărcat și instalat Docker Desktop. 
+
    **2. Executare**:
+
 Am creat un repository nou, denumit containers04, pe care l-am clonat pe calculatorul meu. În directorul containers04, am creat un fișier README.md în care am documentat pas cu pas.
+
  **3. Pornire și testare**:
+
 În directorul containers04, am pus urmatoarea comanda si
 astfel am obținut un terminal interactiv în interiorul containerului, pornind de la imaginea Ubuntu:
 ```bash
@@ -47,6 +53,10 @@ Am deschis browserul și am navigat la adresa: http://localhost:8000.
 
 Am vizualizat pagina implicită a serverului Apache, care, în mod obișnuit, afișează un mesaj precum „It works!” sau o pagină de prezentare standard a Apache. Această pagină confirmă faptul că serverul este pornit și funcționează corect.
 
+![Alt text](screen/apache.jpg)
+
+
+
 
 Această comandă a listat fișierele și permisiunile din directorul /var/www/html/, directorul implicit unde Apache caută fișierele web:
 
@@ -61,6 +71,7 @@ Am creat fișierul index.html cu conținutul HTML ce afișează mesajul „Hello
 *Ce vedeam acum pe ecran?*
 
 După reîmprospătare, pagina web afișa mesajul „Hello, World!” stilizat ca titlu (H1), confirmând că modificarea fișierului index.html a avut succes.
+![Alt text](screen/local.jpg)
 
  Am navigat în directorul unde Apache stochează fișierele de configurare pentru site-urile active:
 ```bash
