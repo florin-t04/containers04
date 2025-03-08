@@ -41,8 +41,10 @@ Am pornit serviciul Apache, astfel încât serverul web să fie activ și să r�
 service apache2 start
 ```
  
-Am deschis browserul și am navigat la adresa: http://localhost:8000.
+Am deschis browserul și am navigat la adresa: http://localhost:8000. 
+
 *Ce vedeam pe ecran?*
+
 Am vizualizat pagina implicită a serverului Apache, care, în mod obișnuit, afișează un mesaj precum „It works!” sau o pagină de prezentare standard a Apache. Această pagină confirmă faptul că serverul este pornit și funcționează corect.
 
 
@@ -51,11 +53,13 @@ Această comandă a listat fișierele și permisiunile din directorul /var/www/h
 ```bash
 ls -l /var/www/html/
 ```
-Am creat fișierul index.html cu conținutul HTML ce afișează mesajul „Hello, World!” ca titlu (folosind tag-ul <h1>). Acest fișier devine pagina principală a serverului web: 
+Am creat fișierul index.html cu conținutul HTML ce afișează mesajul „Hello, World!” ca titlu. Acest fișier devine pagina principală a serverului web: 
 ```bash
     echo '<h1>Hello, World!</h1>' > /var/www/html/index.html
 ```
+
 *Ce vedeam acum pe ecran?*
+
 După reîmprospătare, pagina web afișa mesajul „Hello, World!” stilizat ca titlu (H1), confirmând că modificarea fișierului index.html a avut succes.
 
  Am navigat în directorul unde Apache stochează fișierele de configurare pentru site-urile active:
@@ -67,8 +71,11 @@ După reîmprospătare, pagina web afișa mesajul „Hello, World!” stilizat c
 ```bash
 cat 000-default.conf
 ```
+
 *Ce vedeam pe ecran?*
+
 Pe ecran am văzut conținutul fișierului 000-default.conf, care include directivele de configurare ale serverului Apache pentru site-ul implicit:
+
 ```bash
 root@e2721d9906e8:/etc/apache2/sites-enabled# cat 000-default.conf
 <VirtualHost *:80>
@@ -101,14 +108,19 @@ root@e2721d9906e8:/etc/apache2/sites-enabled# cat 000-default.conf
         #Include conf-available/serve-cgi-bin.conf
 </VirtualHost>
 ```
+
 Am închis sesiunea interactivă din container, revenind la mediul de lucru al sistemului gazdă:
+
 ```bash
 exit
 ```
+
 Această comandă a listat toate containerele (active și oprite), oferindu-mi o imagine de ansamblu asupra resurselor Docker utilizate:
+
 ```bash
 docker ps -a
 ```
+
 ```bash
 C:\Users\user\Desktop\cv-lab04\containers04> docker ps -a
 CONTAINER ID   IMAGE             COMMAND                  CREATED          STATUS                     PORTS     
